@@ -56,3 +56,4 @@ I'm hopeful that this project will make planning your next meal easier and more 
   <img src="https://github.com/Prathamesh-Patil-GitHub/codies-mess/blob/main/output_Images/output_2.png"> <br/>
   
 </p>
+<hr/>
