@@ -1,3 +1,6 @@
+// *****************************
+// @author - Prathamesh Patil  **
+// ****************************
 import React from 'react'
 import { BsCurrencyRupee } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
