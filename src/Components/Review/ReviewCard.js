@@ -1,3 +1,7 @@
+// *****************************
+// @author - Prathamesh Patil  **
+// ****************************
+
 import React from 'react'
 import { HiUserCircle } from 'react-icons/hi';
 
