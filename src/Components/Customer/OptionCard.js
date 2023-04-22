@@ -1,3 +1,7 @@
+// *****************************
+// @author - Prathamesh Patil  **
+// ****************************
+
 import React from 'react'
 import { BsFilterRight } from 'react-icons/bs';
 import { BiSearch } from 'react-icons/bi';
