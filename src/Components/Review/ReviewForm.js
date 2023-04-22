@@ -1,3 +1,7 @@
+// *****************************
+// @author - Prathamesh Patil  **
+// ****************************
+
 import React, { useState } from 'react'
 import ReactStars from "react-rating-stars-component";
 import { FcApproval } from 'react-icons/fc';
