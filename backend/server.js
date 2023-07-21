@@ -356,5 +356,5 @@ app.post("/get-reviews", async (req,res)=>{
 })
 
 app.listen(port, () => {
-    console.log(`2_codies Backend Listening on ${port}...`)
+    console.log(`Codies Mess Backend Listening on Port ${port}...`)
 })
