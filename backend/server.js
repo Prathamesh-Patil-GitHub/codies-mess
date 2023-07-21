@@ -54,7 +54,7 @@ app.post('/signup', async (req, res) => {
                     ratedMess: ""
                 });
                 await custInstance.save();
-                console.log("user added");
+                // console.log("user added");
                 data = {
                     time: Date(),
                     name: req.body.name,
@@ -83,7 +83,7 @@ app.post('/signup', async (req, res) => {
                     review: []
                 })
                 data = await ownerInstance.save();
-                console.log("user added");
+                // console.log("user added");
                 data = {
                     time: Date(),
                     name: req.body.name,
@@ -167,7 +167,7 @@ app.post('/update-owner', async (req, res) => {
 app.post('/update-menu', async (req, res) => {
     try {
         const data = jwt.verify(req.body.auth_token, secret_key);
-        console.log("reached")
+        // console.log("reached")
         const email = data.email;
         const menu = req.body.menu;
         const price = req.body.price;
@@ -261,7 +261,7 @@ app.post('/get-hotel', async (req, res) => {
 app.post('/get-owner', async (req, res) => {
     let data = jwt.verify(req.body.auth_token, secret_key);
     let email = data.email;
-    console.log(email);
+    // console.log(email);
     let ownerData = await owner.findOne({ email: email });
     res.send({ error: false, data: ownerData });
 })
@@ -313,7 +313,7 @@ app.post("/rate-mess", async (req, res) => {
         review.push(reviewObj);
         let rating = ownerData.rating;
         rating = rating + req.body.stars;
-        console.log(req.body.stars)
+        //console.log(req.body.stars)
         let ratedMess = custData.ratedMess+", "+ownerEmail;
         await owner.findOneAndUpdate({ email: ownerEmail }, { rating:rating, review: review});
         await customer.findOneAndUpdate({email: custEmail}, {ratedMess: ratedMess})
