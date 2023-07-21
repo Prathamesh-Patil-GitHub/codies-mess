@@ -1,7 +1,3 @@
-// *****************************
-// @author - Prathamesh Patil  **
-// ****************************
-
 const mongoose = require('mongoose');
 
 const someModel = new mongoose.Schema({
