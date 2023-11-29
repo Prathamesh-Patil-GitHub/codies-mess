@@ -115,6 +115,7 @@ h3{
   }
 }
 
+/* General CSS to display or hide any component throught classes*/
 .show-component{
   display: block;
 }
@@ -123,6 +124,7 @@ h3{
   display: none;
 }
 
+/* CSS for Hamburger Menu Button */
 .ham-btn{
   transition-duration: .5s;
   background-image: url("./img/menu-btn.png");
