@@ -15,8 +15,6 @@ let secret_key = "secret-key";
 app.use(bodyParser.json())
 app.use(cors());
 
-// meow
-
 //Validation Function
 function isValid(name, email, password) {
     let valid = true;
