@@ -13,7 +13,7 @@ const ReviewForm = ({ email }) => {
     const auth_token = localStorage.getItem("auth_token");
 
     const loadReview = async () => {
-        await fetch('http://localhost:5000/check-rate', {
+        await fetch('https://codies-mess.vercel.app/check-rate', {
 
             method: "POST",
 
@@ -50,7 +50,7 @@ const ReviewForm = ({ email }) => {
     };
 
     const rate = async () => {
-        await fetch('http://localhost:5000/rate-mess', {
+        await fetch('https://codies-mess.vercel.app/rate-mess', {
 
             method: "POST",
 

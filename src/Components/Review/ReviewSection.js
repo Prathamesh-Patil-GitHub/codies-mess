@@ -11,7 +11,7 @@ const ReviewSection = () => {
     const [data, setData] = useState([]);
     const loadData = async () => {
         let email = localStorage.getItem("findEmail");
-        await fetch('http://localhost:5000/get-reviews', {
+        await fetch('https://codies-mess.vercel.app/get-reviews', {
 
             method: "POST",
 

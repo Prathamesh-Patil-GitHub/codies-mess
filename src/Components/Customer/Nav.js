@@ -21,7 +21,7 @@ const Nav = () => {
 
   const loadName = async ()=>{
     let auth_token = localStorage.getItem('auth_token');
-    await fetch('http://localhost:5000/get-customer', {
+    await fetch('https://codies-mess.vercel.app/get-customer', {
 
                 method: "POST",
 
